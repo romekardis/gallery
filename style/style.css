@@ -1,0 +1,49 @@
+.container {
+	width: 1024px;
+	margin: 100px auto; 
+}
+.my-gallery {
+	position: relative;
+}
+.my-gallery__photos {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s linear;
+}
+.my-gallery__photos-view {
+	opacity: 1;
+}
+.myGallery__btnPrev,
+.myGallery__btnNext {
+	position: absolute;
+	z-index: 999;
+	height: 768px;
+	width: 200px;	
+}
+.myGallery__btnPrev:hover {
+	background: linear-gradient(to right, rgba(0,0,0, 0.9), rgba(0,0,0, 0));
+	opacity: 0.7;
+}
+.myGallery__btnNext {
+	right: 0;	
+}
+.myGallery__btnNext:hover {
+	background: linear-gradient(to left, rgba(0,0,0, 0.9), rgba(0,0,0, 0));
+	opacity: 0.7;
+}
+.myGallery__btnPrev div,
+.myGallery__btnNext div {
+	position: absolute;
+	top: 50%;
+	background: red;
+	width: 40px;
+	height: 50px;
+	margin-top: -25px;
+}
+.myGallery__btnPrev div {
+	left: 55px;
+}
+.myGallery__btnNext div {
+	right: 55px;
+}
